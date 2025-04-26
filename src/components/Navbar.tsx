@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
+import Link from "next/link"
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -9,7 +10,7 @@ const Navbar = () => {
     const [isPending, startTransition] = useTransition();
 
     const navLinkStyle =
-        "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium";
+        "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out";
 
     const handleNavClick = (hash: string) => {
         if (pathname !== "/") {
@@ -37,7 +38,8 @@ const Navbar = () => {
             <nav className="mx-auto flex h-16 items-center justify-between px-4 sm:px-10 max-w-7xl">
                 <div className="flex items-center">
                     <button disabled={isPending}></button>
-                    <Image 
+                <Link href="/" className="flex items-center">
+                <Image 
                     src="/vg.svg"
                     alt="Vida Logo" 
                     width={80} 
@@ -45,16 +47,21 @@ const Navbar = () => {
                     className="object-contain"
                     style={{fill:"transparent"}}
                     />
+                </Link>
+                    
                 </div>
                 <div className="hidden sm:flex space-x-6">
                     <button onClick={() => handleNavClick("#about")} className={navLinkStyle}>
                         About
                     </button>
-                    <button onClick={() => handleNavClick("#projects")} className={navLinkStyle}>
-                        Projects
+                    <button onClick={() => handleNavClick("#skills")} className={navLinkStyle}>
+                        Skills
                     </button>
                     <button onClick={() => handleNavClick("#experience")} className={navLinkStyle}>
                         Experiences
+                    </button>
+                    <button onClick={() => handleNavClick("#projects")} className={navLinkStyle}>
+                        Projects
                     </button>
                     <button onClick={() => handleNavClick("#contact")} className={navLinkStyle}>
                         Contact
