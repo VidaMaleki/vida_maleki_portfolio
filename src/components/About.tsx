@@ -6,10 +6,8 @@ const About = () => {
             id="about"
             className="w-full max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between gap-12"
         >
-            {/* Left: Text Content */}
             <div className="w-full md:w-3/5 text-left">
                 <div className="flex items-center gap-4 mb-6">
-                    {/* <span className="text-indigo-400 font-mono text-sm">01.</span> */}
                     <h2 className="text-white text-2xl sm:text-3xl font-bold">About</h2><h2 className='text-indigo-400 text-2xl sm:text-3xl font-bold'>Me</h2>
                     <div className="flex-1 h-px bg-slate-600"></div>
                 </div>
@@ -25,14 +23,12 @@ const About = () => {
                     Outside of tech, I love painting nature on canvas, teaching my son, and learning something new every day.
                 </p>
             </div>
-
-            {/* Right: Image */}
             <div className="w-full md:w-2/5 flex justify-center">
                 <div className="relative group">
                     <div className="absolute inset-0 border-2 border-indigo-400 rounded-md transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300"></div>
                     <Image
                         alt="Vida"
-                        src="/images/vida-headshot.jpg" // Replace with your image
+                        src="/images/vida-headshot.jpg"
                         width={250}
                         height={250}
                         className="relative z-10 rounded-md grayscale hover:grayscale-0 transition duration-300 object-cover"

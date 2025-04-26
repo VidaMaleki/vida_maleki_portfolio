@@ -37,7 +37,6 @@ const Projects = () => {
   return (
     <section id="projects" className="w-full py-20 text-center overflow-hidden">
       <h2 className="text-3xl font-bold mb-10 text-white">Projects</h2>
-
       <div className="slider-container max-w-full overflow-x-hidden">
         <Slider {...settings}>
           {projects.map((project, index) => (
@@ -49,7 +48,6 @@ const Projects = () => {
           ))}
         </Slider>
       </div>
-
       <div className="mt-10">
         <Link
           href="/projects"

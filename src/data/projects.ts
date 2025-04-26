@@ -6,7 +6,7 @@ export const projects = [
       tag: "AI Finance",
       tech: ["React", "TypeScript", "Tailwind CSS", "AWS"],
       github: "https://github.com/VidaMaleki/cashzar-cash-treasury",
-      live: "https://cashzar.com", // if no live link, you can remove this field
+      live: "https://cashzar.com",
     },
     {
       title: "Adies Capstone Hub",

@@ -1,4 +1,3 @@
-
 "use client";
 import { useState } from "react";
 import { experiences } from "@/data/experiences";
@@ -9,7 +8,6 @@ export default function Experience() {
   return (
     <section id="experience" className="max-w-6xl mx-auto px-6 py-24 text-slate-300">
       <div className="flex items-center gap-4 mb-8">
-        {/* <span className="text-indigo-400 font-mono text-sm">02.</span> */}
         <h2 className="text-white text-2xl sm:text-3xl font-bold">Where I’ve Worked</h2>
         <div className="flex-1 h-px bg-slate-600"></div>
       </div>
@@ -22,11 +20,10 @@ export default function Experience() {
               <li key={exp.company}>
                 <button
                   onClick={() => setActive(index)}
-                  className={`pl-4 py-2 w-full text-left border-l-4 transition-colors ${
-                    active === index
+                  className={`pl-4 py-2 w-full text-left border-l-4 transition-colors ${active === index
                       ? "border-indigo-400 text-indigo-400 bg-slate-800"
                       : "border-transparent hover:text-indigo-300 hover:bg-slate-800"
-                  }`}
+                    }`}
                 >
                   {exp.company}
                 </button>

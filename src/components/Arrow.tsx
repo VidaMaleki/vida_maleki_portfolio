@@ -1,7 +1,10 @@
-// Arrow.tsx
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
-export const PrevArrow = ({ onClick }: any) => (
+interface ArrowProps {
+    onClick?: () => void;
+  }
+
+export const PrevArrow = ({ onClick }:ArrowProps ) => (
   <button
     onClick={onClick}
     className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur"
@@ -11,7 +14,7 @@ export const PrevArrow = ({ onClick }: any) => (
   </button>
 );
 
-export const NextArrow = ({ onClick }: any) => (
+export const NextArrow = ({ onClick }: ArrowProps) => (
   <button
     onClick={onClick}
     className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 p-1 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur"

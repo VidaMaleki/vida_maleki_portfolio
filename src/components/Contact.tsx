@@ -1,22 +1,22 @@
 "use client";
 
 import { FormEvent } from "react";
-import { toast } from "react-hot-toast"; // make sure react-hot-toast is installed!
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
     const formData = new FormData(form);
     const formDataObj = Object.fromEntries(formData);
-    const formBody = new URLSearchParams(formDataObj as any).toString();
+    const formBody = new URLSearchParams(formDataObj as Record<string, string>).toString();
 
     try {
       await fetch(
         "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeSwogtUnE5yKHEEo52AC_VOnVQ25txYV_Lmw2NXvCsL4sB4g/formResponse",
         {
           method: "POST",
-          mode: "no-cors", // Important for Google Forms
+          mode: "no-cors", 
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
@@ -25,7 +25,7 @@ const Contact = () => {
       );
 
       toast.success("Thank you! Your message has been sent 🎉");
-      form.reset(); // Clear the form
+      form.reset();
     } catch (error) {
       console.error("Form submission error:", error);
       toast.error("Oops! Something went wrong. Please try again.");
@@ -36,7 +36,7 @@ const Contact = () => {
     <section id="contact" className="w-full py-20 px-6 text-center">
       <h2 className="text-3xl font-bold mb-10 text-white">Contact Me</h2>
       <p className="max-w-2xl mx-auto text-gray-400 mb-10">
-        Feel free to reach out! I'd love to hear from you.
+      Feel free to reach out! I&apos;d love to hear from you.
       </p>
 
       <div className="max-w-2xl mx-auto w-full">

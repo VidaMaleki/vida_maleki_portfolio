@@ -35,7 +35,6 @@ const Navbar = () => {
                             Contact
                         </span>
                     </Link>
-                    {/* text-xs text-white px-2 py-1 border border-indigo-400 rounded */}
                     <button className="text-gray-300 border border-indigo-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">RESUME</button>
                 </div>
             </nav>
