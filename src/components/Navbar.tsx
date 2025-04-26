@@ -34,6 +34,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-slate-800 shadow-xl/20">
       <nav className="mx-auto flex h-16 items-center justify-between px-4 sm:px-10 max-w-7xl">
+      <button disabled={isPending}>Projects</button>
         <div className="flex items-center">
           <h1 className="text-indigo-400 text-3xl">VG</h1>
         </div>
