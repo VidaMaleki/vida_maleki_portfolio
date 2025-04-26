@@ -35,47 +35,51 @@ const Navbar = () => {
 
     return (
         <header className="sticky top-0 z-50 bg-slate-800 shadow-xl/20">
-            <nav className="mx-auto flex h-16 items-center justify-between px-4 sm:px-10 max-w-7xl">
-                <div className="flex items-center">
-                    <button disabled={isPending}></button>
-                <Link href="/" className="flex items-center">
-                <Image 
-                    src="/vg.svg"
-                    alt="Vida Logo" 
-                    width={80} 
-                    height={40} 
-                    className="object-contain"
-                    style={{fill:"transparent"}}
-                    />
-                </Link>
-                    
-                </div>
-                <div className="hidden sm:flex space-x-6">
-                    <button onClick={() => handleNavClick("#about")} className={navLinkStyle}>
-                        About
-                    </button>
-                    <button onClick={() => handleNavClick("#skills")} className={navLinkStyle}>
-                        Skills
-                    </button>
-                    <button onClick={() => handleNavClick("#experience")} className={navLinkStyle}>
-                        Experiences
-                    </button>
-                    <button onClick={() => handleNavClick("#projects")} className={navLinkStyle}>
-                        Projects
-                    </button>
-                    <button onClick={() => handleNavClick("#contact")} className={navLinkStyle}>
-                        Contact
-                    </button>
-                    <a
-                        href="/resume/Vida_software_engineer.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-300 border border-indigo-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                        RESUME
-                    </a>
-                </div>
-            </nav>
-        </header>
+        <nav className="w-full flex justify-between items-center sm:px-10 h-16">
+          
+          {/* Logo section */}
+          <div className="flex justify-start items-center w-1/3">
+            <Link href="/" className="flex items-center">
+              <Image 
+                src="/vg.svg"
+                alt="Vida Logo" 
+                width={80} 
+                height={40} 
+                className="object-contain"
+              />
+            </Link>
+          </div>
+      
+          {/* Navigation links */}
+          <div className="hidden sm:flex justify-end items-center w-2/3 space-x-6">
+            <button onClick={() => handleNavClick("#about")} className={navLinkStyle}>
+              About
+            </button>
+            <button onClick={() => handleNavClick("#skills")} className={navLinkStyle}>
+              Skills
+            </button>
+            <button onClick={() => handleNavClick("#experience")} className={navLinkStyle}>
+              Experiences
+            </button>
+            <button onClick={() => handleNavClick("#projects")} className={navLinkStyle}>
+              Projects
+            </button>
+            <button onClick={() => handleNavClick("#contact")} className={navLinkStyle}>
+              Contact
+            </button>
+            <a
+              href="/resume/Vida_software_engineer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 border border-indigo-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              RESUME
+            </a>
+          </div>
+      
+        </nav>
+      </header>
+      
     );
 };
 
