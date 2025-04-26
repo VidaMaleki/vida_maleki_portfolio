@@ -1,58 +1,57 @@
 export const projects = [
-    {
-      title: "CashZar",
-      description: `CashZar is a comprehensive financial management platform that leverages AI technology to provide businesses with advanced cash and treasury services. It offers a suite of tools for cash flow management, treasury analysis, and financial forecasting, enabling businesses to optimize their financial operations.`,
-      image: "/images/chatAi.png",
-      tag: "AI Finance",
-      tech: ["React", "TypeScript", "CSS", "AWS S3"],
-      github: "https://github.com/VidaMaleki",
-      live: "http://cashzar-website.s3-website-us-west-2.amazonaws.com/",
-    },
-    
-    {
-      title: "Adies Capstone Hub",
-      description: `Adies Capstone Hub is a platform designed to facilitate the management and execution of capstone projects. It provides tools for project tracking, collaboration, and resource management, ensuring that students and faculty can effectively navigate the complexities of capstone projects.`,
-      image: "/images/AdiesCapstoneHub.png",
-      tag: "PROJECT MANAGEMENT",
-      tech: ["Next.js", "TypeScript", "Tailwind","Render", "JWT"],
-      github: "https://github.com/VidaMaleki/Adies_capstones_directory",
-      live: ""
-    },
-    {
-      title: "Magic Storybook",
-      description: `An AI-powered story generator that allows users to create dynamic stories based on character, setting, and special messages.`,
-      image: "/images/magicstorybook.png",
-      tag: "AI Tool",
-      tech: ["React","TypeScript", "Java",  "Spring Boot", "OpenAI"],
-      github: "https://github.com/VidaMaleki/magic-storybook",
-      live: "",
-    },
-    {
-      title: "Linear Media Player Challenge",
-      description: `A custom media player built as a Linear coding challenge, with full support for keyboard controls, seek, and play/pause.`,
-      image: "/images/mediaplayer.png",
-      tag: "Frontend Challenge",
-      tech: ["React", "TypeScript", "CSS Modules"],
-      github: "https://github.com/VidaMaleki/linear-media-player",
-      live: "https://linear-media-player-livid.vercel.app/",
-    },
-    {
-        title: "Ramp DOM Search Challenge",
-        description: `A React app that extracts hidden data from the DOM and fetches a flag using async/await, featuring a custom typewriter animation built with React Hooks.`,
-        image: "/images/ramp.jpg",
-        tag: "Frontend Challenge",
-        tech: ["React", "TypeScript", "Fetch API"],
-        github: "https://github.com/VidaMaleki/ramp-challenge-solution",
-        live: "https://codesandbox.io/p/sandbox/ramp-challenge-n76msc?file=%2Fsrc%2FApp.tsx%3A1%2C1-90%2C1",
-      },
-      {
-        title: "Preswald Data App Challenge",
-        description: `An interactive data app built using Preswald and the Iris dataset. Features SQL-like queries, a dynamic table, a Plotly scatter plot, and slider-based filtering.`,
-        image: "/images/preswald.png",
-        tag: "Data App Challenge",
-        tech: ["Python", "Preswald", "Plotly", "Data Visualization"],
-        github: "https://github.com/VidaMaleki/structured-labs-assessment", // (if you create repo for it)
-        live: "",
-      }
-  ];
-  
+  {
+    title: "CashZar",
+    description: `CashZar is a comprehensive financial management platform that leverages AI technology to provide businesses with advanced cash and treasury services. It offers a suite of tools for cash flow management, treasury analysis, and financial forecasting, enabling businesses to optimize their financial operations.`,
+    image: "/images/chatAi.png",
+    tag: "AI Finance",
+    tech: ["React", "TypeScript", "CSS", "AWS S3"],
+    github: "https://github.com/VidaMaleki",
+    live: "http://cashzar-website.s3-website-us-west-2.amazonaws.com/",
+  },
+
+  {
+    title: "Adies Capstone Hub",
+    description: `Adies Capstone Hub is a platform designed to facilitate the management and execution of capstone projects. It provides tools for project tracking, collaboration, and resource management, ensuring that students and faculty can effectively navigate the complexities of capstone projects.`,
+    image: "/images/AdiesCapstoneHub.png",
+    tag: "PROJECT MANAGEMENT",
+    tech: ["Next.js", "TypeScript", "Tailwind", "Render", "JWT"],
+    github: "https://github.com/VidaMaleki/Adies_capstones_directory",
+    live: "",
+  },
+  {
+    title: "Magic Storybook",
+    description: `An AI-powered story generator that allows users to create dynamic stories based on character, setting, and special messages.`,
+    image: "/images/magicstorybook.png",
+    tag: "AI Tool",
+    tech: ["React", "TypeScript", "Java", "Spring Boot", "OpenAI"],
+    github: "https://github.com/VidaMaleki/magic-storybook",
+    live: "",
+  },
+  {
+    title: "Linear Media Player Challenge",
+    description: `A custom media player built as a Linear coding challenge, with full support for keyboard controls, seek, and play/pause.`,
+    image: "/images/mediaPlayer.png",
+    tag: "Frontend Challenge",
+    tech: ["React", "TypeScript", "CSS Modules"],
+    github: "https://github.com/VidaMaleki/linear-media-player",
+    live: "https://linear-media-player-livid.vercel.app/",
+  },
+  {
+    title: "Ramp DOM Search Challenge",
+    description: `A React app that extracts hidden data from the DOM and fetches a flag using async/await, featuring a custom typewriter animation built with React Hooks.`,
+    image: "/images/ramp.jpg",
+    tag: "Frontend Challenge",
+    tech: ["React", "TypeScript", "Fetch API"],
+    github: "https://github.com/VidaMaleki/ramp-challenge-solution",
+    live: "https://codesandbox.io/p/sandbox/ramp-challenge-n76msc?file=%2Fsrc%2FApp.tsx%3A1%2C1-90%2C1",
+  },
+  {
+    title: "Preswald Data App Challenge",
+    description: `An interactive data app built using Preswald and the Iris dataset. Features SQL-like queries, a dynamic table, a Plotly scatter plot, and slider-based filtering.`,
+    image: "/images/preswald.png",
+    tag: "Data App Challenge",
+    tech: ["Python", "Preswald", "Plotly", "Data Visualization"],
+    github: "https://github.com/VidaMaleki/structured-labs-assessment", // (if you create repo for it)
+    live: "",
+  },
+];
