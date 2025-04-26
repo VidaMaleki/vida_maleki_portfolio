@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
 
@@ -36,7 +37,14 @@ const Navbar = () => {
             <nav className="mx-auto flex h-16 items-center justify-between px-4 sm:px-10 max-w-7xl">
                 <div className="flex items-center">
                     <button disabled={isPending}></button>
-                    <h1 className="text-indigo-400 text-3xl">VG</h1>
+                    <Image 
+                    src="/vg.svg"
+                    alt="Vida Logo" 
+                    width={80} 
+                    height={40} 
+                    className="object-contain"
+                    style={{fill:"transparent"}}
+                    />
                 </div>
                 <div className="hidden sm:flex space-x-6">
                     <button onClick={() => handleNavClick("#about")} className={navLinkStyle}>

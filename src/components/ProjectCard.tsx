@@ -14,8 +14,7 @@ type Props = {
 
 const ProjectCard = ({ title, description, image, tag, tech, github, live }: Props) => {
     return (
-        <div className="flex flex-col justify-between h-full min-h-[480px] p-4 rounded-xl shadow-xl bg-gray-600 text-white">
-            {/* Tag */}
+<div className="flex flex-col justify-between h-full min-h-[560px] p-4 rounded-xl shadow-xl bg-gray-600 text-white">            {/* Tag */}
             <span className="text-xs font-semibold bg-indigo-500 w-fit px-2 py-1 rounded mb-2 uppercase">
                 {tag}
             </span>
@@ -26,13 +25,13 @@ const ProjectCard = ({ title, description, image, tag, tech, github, live }: Pro
                     alt={title}
                     width={400}
                     height={200}
-                    className="rounded object-cover mx-auto"
+                    className="rounded w-full h-[200px] object-cover mx-auto"
                 />
             </div>
             {/* Title */}
             <h3 className="text-lg font-bold mb-2">{title}</h3>
             {/* Description */}
-            <p className="text-sm text-gray-300 mb-4">{description}</p>
+            <p className="text-sm text-gray-300 mb-4 min-h-[80px]">{description}</p>
             <div className="mt-auto flex flex-col gap-3">
                 {/* Tech Stack */}
                 {tech && (

@@ -33,6 +33,7 @@ const Projects = () => {
       },
     ],
   };
+  
 
   return (
     <section id="projects" className="w-full py-20 text-center overflow-hidden">
