@@ -28,7 +28,7 @@ const About = () => {
                     <div className="absolute inset-0 border-2 border-indigo-400 rounded-md transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-300"></div>
                     <Image
                         alt="Vida"
-                        src="/images/vida-headshot.jpg"
+                        src="/images/vida.jpg"
                         width={250}
                         height={250}
                         className="relative z-10 rounded-md grayscale hover:grayscale-0 transition duration-300 object-cover"

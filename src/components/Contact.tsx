@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="w-full py-20 px-6 text-center">
+    <section id="contact" className="w-full py-20 pb-10 px-6 text-center">
       <h2 className="text-3xl font-bold mb-10 text-white">Contact Me</h2>
       <p className="max-w-2xl mx-auto text-gray-400 mb-10">
       Feel free to reach out! I&apos;d love to hear from you.
