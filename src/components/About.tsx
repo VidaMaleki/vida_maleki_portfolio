@@ -12,15 +12,13 @@ const About = () => {
                     <div className="flex-1 h-px bg-slate-600"></div>
                 </div>
                 <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                    Hello! I’m <span className="text-indigo-400 font-medium">Vida</span>, a full-stack software engineer with a passion for building intuitive, user-focused applications.
+                    Hello! I’m <span className="text-indigo-400 font-medium">Vida</span>, a full-stack software engineer passionate about building scalable, user-friendly applications.
                     <br /><br />
-                    My path into tech wasn’t traditional. I originally studied Accounting and worked in banking before discovering my love for software development. After moving to the U.S., becoming a mom, and searching for a career that truly excited me, I dove into code, often studying late into the night while caring for my baby during the day.
+                    After working in banking and accounting, I transitioned into tech to follow my passion for problem-solving and innovation, inspired by my desire to set a strong example for my son. I completed my training at <span className="text-indigo-400">Ada Developers Academy</span>, freelanced for real-world clients, and built professional experience through internships at <span className="text-indigo-400">Microsoft</span>, <span className="text-indigo-400">Snowflake</span>, and early-stage startups.
                     <br /><br />
-                    Since then, I’ve completed multiple internships at <span className="text-indigo-400">Microsoft</span>, <span className="text-indigo-400">Snowflake</span>, and startups, working on everything from scalable backend systems to accessible frontend interfaces. I enjoy solving complex problems with clean, maintainable code and collaborating with teams that care about users as much as technology.
+                    I enjoy working across the stack, with particular strengths in React, TypeScript, Python, and backend systems. I love solving complex problems with clean, maintainable code and collaborating with teams that value both users and technology.
                     <br /><br />
-                    I’m currently looking for full-time opportunities where I can continue learning, contribute to real-world impact, and grow as an engineer. I’m especially interested in roles focused on frontend, full-stack, or developer experience.
-                    <br /><br />
-                    Outside of tech, I love painting nature on canvas, teaching my son, and learning something new every day.
+                    I’m currently seeking a full-time opportunity where I can continue growing as an engineer and contribute to impactful, user-focused products.
                 </p>
             </div>
             <div className="w-full md:w-2/5 flex justify-center">
