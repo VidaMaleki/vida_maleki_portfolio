@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "DevLens",
+    description: `DevLens is an AI-powered VS Code extension that helps developers understand unfamiliar codebases faster. It uses OpenAI’s GPT-4o to summarize JavaScript/TypeScript files inline. Future updates will support full codebase Q&A and additional languages.`,
+    image: "/images/devlens.png",
+    tag: "VS Code Extension",
+    tech: ["TypeScript", "VS Code API", "OpenAI", "Node.js"],
+    github: "https://github.com/VidaMaleki/DevLense",
+    live: "https://marketplace.visualstudio.com/items?itemName=vida-dev.devlens",
+  },
+  {
     title: "CashZar",
     description: `CashZar is a comprehensive financial management platform that leverages AI technology to provide businesses with advanced cash and treasury services. It offers a suite of tools for cash flow management, treasury analysis, and financial forecasting, enabling businesses to optimize their financial operations.`,
     image: "/images/chatAi.png",
@@ -8,7 +17,6 @@ export const projects = [
     github: "https://github.com/VidaMaleki",
     live: "http://cashzar-website.s3-website-us-west-2.amazonaws.com/",
   },
-
   {
     title: "Adies Capstone Hub",
     description: `Adies Capstone Hub is a platform designed to facilitate the management and execution of capstone projects. It provides tools for project tracking, collaboration, and resource management, ensuring that students and faculty can effectively navigate the complexities of capstone projects.`,
