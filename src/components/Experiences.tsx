@@ -12,7 +12,6 @@ export default function Experience() {
         <h2 className="text-white text-2xl sm:text-3xl font-bold">Where I’ve Worked</h2>
         <div className="flex-1 h-px bg-slate-600"></div>
       </div>
-
       <div className="flex flex-col md:flex-row gap-10">
         {/* Sidebar */}
         <div className="md:w-1/4">
@@ -21,11 +20,10 @@ export default function Experience() {
               <li key={exp.company}>
                 <button
                   onClick={() => setActive(index)}
-                  className={`pl-4 py-2 w-full text-left border-l-4 transition-colors duration-200 ${
-                    active === index
-                      ? "border-indigo-400 text-indigo-400 bg-slate-800"
-                      : "border-transparent hover:text-indigo-300 hover:bg-slate-800"
-                  }`}
+                  className={`pl-4 py-2 w-full text-left border-l-4 transition-colors duration-200 ${active === index
+                    ? "border-indigo-400 text-indigo-400 bg-slate-800"
+                    : "border-transparent hover:text-indigo-300 hover:bg-slate-800"
+                    }`}
                 >
                   {exp.company}
                 </button>
@@ -33,10 +31,8 @@ export default function Experience() {
             ))}
           </ul>
         </div>
-
         {/* Details */}
         <div className="w-full md:w-[700px] min-h-[420px] px-4 md:px-6 relative overflow-hidden text-left mx-auto">
-
           <div className="relative w-full h-full">
             <AnimatePresence mode="wait">
               <motion.div
