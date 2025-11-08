@@ -69,7 +69,7 @@ const Navbar = () => {
                         Contact
                     </button>
                     <Link
-                        href="/resume/vida_software_engineer.pdf"
+                        href="/resume/vida_resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 border border-indigo-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -106,7 +106,7 @@ const Navbar = () => {
                         Contact
                     </button>
                     <Link
-                        href="/resume/vida_software_engineer.pdf"
+                        href="/resume/vida_resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 border border-indigo-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
