@@ -68,14 +68,14 @@ const Navbar = () => {
                     <button onClick={() => handleNavClick("#contact")} className={navLinkStyle}>
                         Contact
                     </button>
-                    <a
+                    <Link
                         href="/resume/vida_software_engineer.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 border border-indigo-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                         RESUME
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -105,14 +105,14 @@ const Navbar = () => {
                     <button onClick={() => handleNavClick("#contact")} className={navLinkStyle}>
                         Contact
                     </button>
-                    <a
+                    <Link
                         href="/resume/vida_software_engineer.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 border border-indigo-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                         RESUME
-                    </a>
+                    </Link>
                 </div>
             )}
         </header>
