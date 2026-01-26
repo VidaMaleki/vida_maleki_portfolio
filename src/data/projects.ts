@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "Design System",
+    description: `Component Lab is an open-source React + TypeScript design system and component playground built to collect, document, and experiment with modern UI patterns. It includes a wide range of reusable components,and serving both as a learning lab and a practical reference for everyday frontend development.`,
+    image: "/images/designSystem.png",
+    tag: "Component Library",
+    tech: ["TypeScript", "Vite", "Tailwind CSS", "Vercel"],
+    github: "https://github.com/VidaMaleki/component-lab",
+    live: "https://component-design-system.vercel.app/",
+  },
+  {
     title: "DevLens",
     description: `DevLens is an AI-powered VS Code extension that helps developers understand unfamiliar codebases faster. It uses OpenAI’s GPT-4o to summarize JavaScript/TypeScript files inline. Future updates will support full codebase Q&A and additional languages.`,
     image: "/images/devlens.png",
