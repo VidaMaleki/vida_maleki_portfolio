@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: "MediBridge",
+    description: `A secure, cloud-native document exchange platform for healthcare organizations, built as a five-person capstone team project. Replaces manual fax workflows with encrypted document routing, AI-powered classification and summarization, and a full immutable audit trail. I led frontend development — building every page, integrating real Cognito authentication, and connecting the entire UI to a live FastAPI backend and AWS infrastructure.`,
+    image: "/images/medibridge.png",
+    tag: "Healthcare / Cloud Platform",
+    tech: [
+       "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "AWS Amplify",
+      "AWS Cognito",
+      "AWS S3",
+      "CloudFront",
+    ],
+    github: "https://github.com/MediBridge-App/MediBridge",
+    live: "https://www.youtube.com/watch?v=-6s1SNIntBo",
+  },
+  {
     title: "Design System",
     description: `Component Lab is an open-source React + TypeScript design system and component playground built to collect, document, and experiment with modern UI patterns. It includes a wide range of reusable components,and serving both as a learning lab and a practical reference for everyday frontend development.`,
     image: "/images/designSystem.png",

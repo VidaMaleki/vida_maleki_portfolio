@@ -14,24 +14,30 @@ type Props = {
 
 const ProjectCard = ({ title, description, image, tag, tech, github, live }: Props) => {
     return (
-<div className="flex flex-col justify-between h-full min-h-[560px] p-4 rounded-xl shadow-xl bg-gray-600 text-white">            {/* Tag */}
+        <div className="flex flex-col justify-between h-full min-h-[560px] p-4 rounded-xl shadow-xl bg-gray-600 text-white">
+            {/* Tag */}
             <span className="text-xs font-semibold bg-indigo-500 w-fit px-2 py-1 rounded mb-2 uppercase">
                 {tag}
             </span>
-            {/* Image */}
-            <div className="mb-4">
+            {/* Image — object-contain so the full screenshot shows without
+                cropping; bg fill handles any letterboxing from aspect-ratio
+                mismatch */}
+            <div className="mb-4 bg-gray-600 rounded overflow-hidden">
                 <Image
                     src={image}
                     alt={title}
                     width={400}
                     height={200}
-                    className="rounded w-full h-[200px] object-cover mx-auto"
+                    className="rounded w-full h-[200px] object-contain mx-auto"
                 />
             </div>
             {/* Title */}
             <h3 className="text-lg font-bold mb-2">{title}</h3>
-            {/* Description */}
-            <p className="text-sm text-gray-300 mb-4 min-h-[80px]">{description}</p>
+            {/* Description — fixed height + scroll so card heights stay
+                consistent regardless of how long each project's description is */}
+            <p className="text-sm text-gray-300 mb-4 h-[110px] overflow-y-auto pr-1">
+                {description}
+            </p>
             <div className="mt-auto flex flex-col gap-3">
                 {/* Tech Stack */}
                 {tech && (
@@ -64,7 +70,7 @@ const ProjectCard = ({ title, description, image, tag, tech, github, live }: Pro
                             href={live}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-1 text-sm font-medium text-gray-300 hover:text-indigo-400"
+                            className="flex items-center gap-1 text-sm font-medium text-white hover:text-indigo-400"
                         >
                             <BiLinkExternal size={18} />
                             Live
